@@ -13,3 +13,8 @@ $containers.forEach(($container, i) => {
     $currentRatings[i].textContent = rating;
   });
 });
+
+// theme.css 동적으로 추가 
+const $script = document.querySelectorAll('script')[0];
+$script.insertAdjacentHTML('beforebegin', '<link href="star-rating/theme.css" rel="stylesheet" />');
+
